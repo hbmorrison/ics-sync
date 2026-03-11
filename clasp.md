@@ -11,15 +11,15 @@ different syncs using
 
 ## Install npm and clasp
 
-```
-$ sudo apt-get install -y npm
-$ sudo npm install -g @google/clasp
+```shell
+sudo apt install -y npm
+sudo npm install -g @google/clasp
 ```
 
 ## Login
 
-```
-$ clasp login
+```shell
+clasp login
 ```
 
 This creates local HTTP server to receive the callback from Google
@@ -28,28 +28,24 @@ paste the URL the command prints out into Chrome.
 
 ## Copy settings
 
-```
-$ cp settings.js.sample settings.js
+```shell
+cp settings.js.sample settings.js
 ```
 
 Edit the `settings.js` file and add details for your calendars.
 
 ## Create a Google Apps Script project
 
-TBC
-
-```
-$ clasp create --type api --title "ical-sync"
+```shell
+clasp create --type api --title "ical-sync"
 ```
 
 ## Push the project
 
-TBC
-
-```
-$ clasp push
+```shell
+clasp push
 ```
 
 ## Add a trigger
 
-TBC
+TBA
