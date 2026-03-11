@@ -29,16 +29,20 @@ paste the URL the command prints out into Chrome.
 ## Copy settings
 
 ```shell
-cp settings.js.sample settings.js
+cp settings.gs.sample settings.gs
 ```
 
-Edit the `settings.js` file and add details for your calendars.
+Edit the `settings.gs` file and add details for your calendars.
 
 ## Create a Google Apps Script project
 
 ```shell
-clasp create --type api --title "ical-sync"
+clasp create --title "<something>-ical-sync"
 ```
+
+Once the project has been created, an `appsscript.json` manifest file will have
+been created by `clasp`. Copy the `appsscript.json.sample` file over it so that
+the project will request access to the correct Google APIs.
 
 ## Push the project
 
@@ -48,4 +52,8 @@ clasp push
 
 ## Add a trigger
 
-TBA
+Go to [Google Apps Scripts](https://script.google.com/home), and click on the new
+project that `clasp` has created. Ensure that `Code.gs` is selected on the left and
+check that the `install` function is selected, which can be found at the top of the
+page, next to Run and Debug, then click Run. You will be prompted to give the
+project permissions to the required APIs.

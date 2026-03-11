@@ -18,5 +18,6 @@ tags
 # Ignore clasp config
 /.clasp.json
 
-# Ignore local settings
-/settings.js
+# Ignore local settings and manifest files.
+/settings.gs
+/appsscript.json

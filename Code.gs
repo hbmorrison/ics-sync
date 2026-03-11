@@ -111,7 +111,7 @@ var removedEvents = [];
 var reportOverallFailure = false;
 
 function startSync(){
-  if (PropertiesService.getUserProperties().getProperty('LastRun') > 0 && (new Date().getTime() - PropertiesService.getUserProperties().getProperty('LastRun')) < 360000) {
+  if (PropertiesService.getUserProperties().getProperty('LastRun') > 0 && (new Date().getTime() - PropertiesService.getUserProperties().getProperty('LastRun')) < 300) {
     Logger.log("Another iteration is currently running! Exiting...");
     return;
   }
