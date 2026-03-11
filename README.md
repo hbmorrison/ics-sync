@@ -1,5 +1,15 @@
 # GAS-ICS-Sync
 
+## Hannah Morrison's Fork
+
+This is a fork of Derek Antrican's
+[GAS-ICS-Sync](https://github.com/derekantrican/GAS-ICS-Sync)
+that moves the settings into a separate settings.js file, so that
+multiple versions of GAS-ICS-Sync can be deployed for different syncs using
+[clasp](https://developers.google.com/apps-script/guides/clasp).
+
+See [clasp.md](clasp.md) for implementation details.
+
 ### ⚠️⚠️ This project is looking for contributors and people to help answer questions! Please message @developers on the Discord! ⚠️⚠️
 
 This is a standalone script (that consists of multiple files). The purpose is to sync ics/ical calendars to Google Calendar. Google Calendar *can* already do this, but updates only happen once every 12 or even 24 hrs. This script can be run much more frequently.
