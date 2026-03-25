@@ -20,4 +20,5 @@ tags
 
 # Ignore local settings and manifest files.
 /settings.gs
+/filters.gs
 /appsscript.json

@@ -232,7 +232,7 @@ function parseResponses(responses){
     result = [].concat(allEvents, result);
   }
 
-  //No need to process cancelled events as they will be added to gcal's trash anyway
+  //No need to process cancelled events as they will be added to gcals trash anyway
   result = result.filter(function(event){
     try{
       return (event.getFirstPropertyValue('status').toString().toLowerCase() != "cancelled");
@@ -308,6 +308,9 @@ function filterResults(events){
           }
         }
         else{
+          if (Object.is(event.getFirstPropertyValue(filter.parameter), null)){
+            return (filter.type == "exclude");
+          }
           let regexString = `${(["equals", "begins with"].includes(filter.comparison)) ? "^" : ""}(${filter.criterias.join("|")})${(filter.comparison == "equals") ? "$" : ""}`;
           let regex = new RegExp(regexString);
           let result = regex.test(event.getFirstPropertyValue(filter.parameter).toString()) ^ (filter.type == "exclude");

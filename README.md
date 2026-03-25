@@ -1,6 +1,4 @@
-# GAS-ICS-Sync
-
-## Hannah Morrison's Fork
+# Hannah Morrison's Fork of GAS-ICS-Sync
 
 This is a fork of Derek Antrican's
 [GAS-ICS-Sync](https://github.com/derekantrican/GAS-ICS-Sync)
@@ -9,6 +7,8 @@ multiple versions of GAS-ICS-Sync can be deployed for different syncs using
 [clasp](https://developers.google.com/apps-script/guides/clasp).
 
 See [clasp.md](clasp.md) for implementation details.
+
+# Original README for GAS-ICS-Sync
 
 ### ⚠️⚠️ This project is looking for contributors and people to help answer questions! Please message @developers on the Discord! ⚠️⚠️
 
